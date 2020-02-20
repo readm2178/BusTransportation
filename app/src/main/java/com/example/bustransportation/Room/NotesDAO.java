@@ -18,5 +18,7 @@ public interface NotesDAO {
     Maybe<List<NotesModel>> GetAll();
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    String InsertAll(NotesModel notesModel);
+        //Basically insert query will not return string.
+        //It'll return only following types "void, long or list long"
+    void InsertAll(NotesModel notesModel);
 }

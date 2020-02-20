@@ -28,8 +28,8 @@ public class NotesModel {
     @ColumnInfo(name = "Type")
     private String Type;
 
-    @ColumnInfo(name = "SaveDate")
-    private Date SaveDate;
+    /*@ColumnInfo(name = "SaveDate")
+    private Date SaveDate;*/
 
     public NotesModel() {
     }
@@ -42,7 +42,8 @@ public class NotesModel {
         Type = type;
 //        SaveDate = saveDate;
     }
-/*
+
+    //We shouldn't hide the getter and setter. Getter and setter are must for Room Object.
     public int getNoteID() {
         return NoteID;
     }
@@ -91,7 +92,7 @@ public class NotesModel {
         Type = type;
     }
 
-    public Date getSaveDate() {
+    /*public Date getSaveDate() {
         return SaveDate;
     }
 

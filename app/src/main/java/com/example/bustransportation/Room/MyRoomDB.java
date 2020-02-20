@@ -6,7 +6,7 @@ import androidx.room.TypeConverters;
 
 import com.example.bustransportation.Model.NotesModel;
 
-@Database(entities = {NotesModel.class}, version = 1)
+@Database(entities = {NotesModel.class}, version = 1, exportSchema = false)
 
 public abstract class MyRoomDB extends RoomDatabase {
 
